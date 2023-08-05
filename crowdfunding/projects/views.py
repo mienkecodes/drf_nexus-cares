@@ -56,6 +56,10 @@ class ProjectDetail(APIView):
         
         if serializer.is_valid():
             serializer.save()
+            return Response(serializer.data) 
+            # return Response("updated thanks!") - alternative response
+        return Response(serializer.errors)
+    
 # Notice that we haven't implemented status codes or error handling here for you. Ifyou don't remember how, take a look back at the previous content block in whichwe demonstrated that. Remember, you can ask the mentors if you get stuck!
     
 class PledgeList(APIView):
