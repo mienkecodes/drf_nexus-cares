@@ -6,6 +6,36 @@ She Codes crowdfunding project - DRF Backend.
 ## About
 {{ Creating an app to simplify and promote volunteers and funding for Nexus Care's projects. Nexus Care is an existing organization based in Brisbane that provides various community services, including food relief programs, career coaching clinics, emergency financial relief, and workplace English classes.This app could play a crucial role in supporting Nexus Care's efforts and expanding their impact, allowing for more community involvement in funding but also volunteers.}}
 
+## Project Requirements
+Your crowdfunding project must:
+[x] Be separated into two distinct projects: an API built using the Django RestFramework and a website built using React.
+[x] Have a cool name, bonus points if it includes a pun and/or missing vowels. 
+[x] Have a clear target audience.
+[x] Have user accounts. A user should have at least the following attributes:
+    [x] Username
+    [x] Email address
+    [x] Password
+[x] Ability to create a “project” to be crowdfunded which will include at least thefollowing attributes:
+    [x] Title
+    [x] Owner (a user)
+    [x] Description
+    [x] Image
+    [x] Target amount to fundraise
+    [x] Whether it is currently open to accepting new supporters or not
+    [x] When the project was created
+[x] Ability to “pledge” to a project. A pledge should include at least the followingattributes:
+    [x] An amount
+    [x] The project the pledge is for
+    [x] The supporter/user (i.e. who created the pledge)
+    [x] Whether the pledge is anonymous or not
+    [x] A comment to go along with the pledge
+[x] Implement suitable update/delete functionality, e.g. should a project owner beallowed to update a project description?
+[x] Implement suitable permissions, e.g. who is allowed to delete a pledge?
+[x] Return the relevant status codes for both successful and unsuccessful requeststo the API.
+[x] Handle failed requests gracefully (e.g. you should have a custom 404 pagerather than the default error page).
+[x] Use Token Authentication.
+[x] Implement responsive design.
+
 ## Features
 {{ The features your MVP will include. (Remember this is a working document, you can change these as you go!) }}
 * [Project Listings] Create a section where Nexus Care can list their ongoing and upcoming projects, such as food relief programs, career coaching clinics, emergency financial relief, and workplace English classes. Each project should have a detailed description, the expected impact, and the amount of funding or volunteers needed.
